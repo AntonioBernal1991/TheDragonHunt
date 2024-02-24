@@ -15,6 +15,7 @@ namespace TheDragonHunt
         private Camera _camera = null;
         public float speed = 20.0f;
 
+        [SerializeField] private bool _disableCameraMovement = false;
         private void Start()
         {
             _initialPosition = transform.position;
@@ -22,7 +23,13 @@ namespace TheDragonHunt
         }
         private void Update()
         {
-           // MoveCamWithKeys();
+          #if UNITY_EDITOR
+            if(_disableCameraMovement)
+            {
+                return;
+            }
+          #endif
+            // MoveCamWithKeys();
             UpdateZoom();
             UpdatePan();
         }

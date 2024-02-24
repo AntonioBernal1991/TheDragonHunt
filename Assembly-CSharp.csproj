@@ -56,14 +56,18 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\_Scripts\Resources\ResourcesType.cs" />
     <Compile Include="Assets\_Scripts\Configuration\LevelConfiguration.cs" />
     <Compile Include="Assets\Formations\Scripts\FormationRenderer.cs" />
     <Compile Include="Assets\Formations\Scripts\FormationBase.cs" />
     <Compile Include="Assets\_Scripts\ObjectPool\ObjectPoolComponent.cs" />
+    <Compile Include="Assets\_Scripts\Spawner\BasicWarriorSpawner.cs" />
     <Compile Include="Assets\_Scripts\Spawner\BaseSpawner.cs" />
     <Compile Include="Assets\_Scripts\Configuration\LevelItemType.cs" />
     <Compile Include="Assets\Formations\Scripts\RadialFormation.cs" />
     <Compile Include="Assets\_Scripts\MessageQueue\MessageQueueManager.cs" />
+    <Compile Include="Assets\_Scripts\UI\ResourcesUpdater.cs" />
+    <Compile Include="Assets\_Scripts\MessageQueue\Message\UI\UpdateResourcesMessage.cs" />
     <Compile Include="Assets\_Scripts\Configuration\Level\LevelData.cs" />
     <Compile Include="Assets\_Scripts\Configuration\Level\LevelSlot.cs" />
     <Compile Include="Assets\_Scripts\Configuration\Level\LevelManager.cs" />
@@ -74,8 +78,11 @@
     <Compile Include="Assets\Formations\Scripts\ExampleArmy.cs" />
     <Compile Include="Assets\Formations\Scripts\BoxFormation.cs" />
     <Compile Include="Assets\_Scripts\Unit\UnitData.cs" />
+    <Compile Include="Assets\_Scripts\MessageQueue\Message\IMessage.cs" />
     <Compile Include="Assets\_Scripts\Configuration\LevelItem.cs" />
     <Compile Include="Assets\Third Party\Humans\Prefabs\dd.cs" />
+    <Compile Include="Assets\_Scripts\MessageQueue\Message\Unit\BasicWarriorSpawnMessage.cs" />
+    <Compile Include="Assets\_Scripts\UI\UnitSelectorUI.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
