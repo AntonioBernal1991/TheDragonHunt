@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: Basic Warrior
   m_EditorClassIdentifier: 
   Type: 0
+  selectedColor: {r: 0, g: 0.6627451, b: 1, a: 0}
   level: 1
   LevelMultiplier: 1.2
   Health: 5
   Attack: 2
   Defense: 1
-  walkSpeed: 10
+  walkSpeed: 5
   AttackSpeed: 5
+  Actions: 15

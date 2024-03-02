@@ -26,16 +26,12 @@ namespace TheDragonHunt
             {
                 unit = warrior.AddComponent<UnitComponent>();
             }
-            unit.ID = Guid.NewGuid().ToString();
-            unit.Type = _unitData.Type;
-            unit.LevelMultiplier = _unitData.LevelMultiplier;
-            unit.Health = _unitData.Health;
-            unit.Attack = _unitData.Attack;
-            unit.Defense = _unitData.Defense;
-            unit.WalkSpeed = _unitData.walkSpeed;
-            unit.AttackSpeed = _unitData.AttackSpeed;
+            unit.CopyData(_unitData);
+  
+           
 
         }
+
        
     }
 }

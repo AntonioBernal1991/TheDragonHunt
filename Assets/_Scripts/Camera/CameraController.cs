@@ -29,9 +29,9 @@ namespace TheDragonHunt
                 return;
             }
           #endif
-            // MoveCamWithKeys();
+            MoveCamWithKeys();
             UpdateZoom();
-            UpdatePan();
+           // UpdatePan();
         }
 
         private void MoveCamWithKeys()
@@ -49,7 +49,7 @@ namespace TheDragonHunt
         private void UpdateZoom()
         {
             float scroll = Input.GetAxis("Mouse ScrollWheel");
-            scroll = scroll * _scrollSpeed * Time.deltaTime;
+            scroll = -scroll * _scrollSpeed * Time.deltaTime;
             _camera.orthographicSize += scroll;
             _camera.orthographicSize = Mathf.Clamp(_camera.orthographicSize,
                 _scrollLimit.x, _scrollLimit.y);

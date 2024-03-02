@@ -2708,7 +2708,7 @@ GameObject:
   - component: {fileID: 559537945}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: Plane
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4217,7 +4217,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &945575313
 Transform:
   m_ObjectHideFlags: 0
@@ -7153,7 +7153,7 @@ MonoBehaviour:
   _panSpeed: 10
   _panLimit: {x: 30, y: 35}
   _scrollSpeed: 1000
-  _scrollLimit: {x: 5, y: 10}
+  _scrollLimit: {x: 5, y: 23}
   speed: 20
   _disableCameraMovement: 1
 --- !u!1001 &1443334184
@@ -9848,3 +9848,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae0639733bf22bd408c632b634a82433, type: 3}
+--- !u!1 &6495950374357406336 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2414903680489666459, guid: ae0639733bf22bd408c632b634a82433, type: 3}
+  m_PrefabInstance: {fileID: 6495950374357406335}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6495950374357406337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6495950374357406336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff7bacc76560e7a46a63d5ad5b9a1657, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

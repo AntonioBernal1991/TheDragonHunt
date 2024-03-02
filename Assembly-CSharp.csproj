@@ -57,17 +57,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\_Scripts\Resources\ResourcesType.cs" />
+    <Compile Include="Assets\_Scripts\Extension\GameObjectExtension.cs" />
+    <Compile Include="Assets\RTS Selector\Scripts\SelectManager.cs" />
     <Compile Include="Assets\_Scripts\Configuration\LevelConfiguration.cs" />
     <Compile Include="Assets\Formations\Scripts\FormationRenderer.cs" />
     <Compile Include="Assets\Formations\Scripts\FormationBase.cs" />
+    <Compile Include="Assets\_Scripts\Unit\UnitSelectorComponent.cs" />
     <Compile Include="Assets\_Scripts\ObjectPool\ObjectPoolComponent.cs" />
     <Compile Include="Assets\_Scripts\Spawner\BasicWarriorSpawner.cs" />
     <Compile Include="Assets\_Scripts\Spawner\BaseSpawner.cs" />
     <Compile Include="Assets\_Scripts\Configuration\LevelItemType.cs" />
+    <Compile Include="Assets\_Scripts\MessageQueue\Message\UI\UpdateDetailsMessage.cs" />
     <Compile Include="Assets\Formations\Scripts\RadialFormation.cs" />
+    <Compile Include="Assets\RTS Selector\Example Scene\Scripts\CameraScript.cs" />
     <Compile Include="Assets\_Scripts\MessageQueue\MessageQueueManager.cs" />
     <Compile Include="Assets\_Scripts\UI\ResourcesUpdater.cs" />
     <Compile Include="Assets\_Scripts\MessageQueue\Message\UI\UpdateResourcesMessage.cs" />
+    <Compile Include="Assets\_Scripts\UI\UnitSelectorUI.cs" />
     <Compile Include="Assets\_Scripts\Configuration\Level\LevelData.cs" />
     <Compile Include="Assets\_Scripts\Configuration\Level\LevelSlot.cs" />
     <Compile Include="Assets\_Scripts\Configuration\Level\LevelManager.cs" />
@@ -78,11 +84,21 @@
     <Compile Include="Assets\Formations\Scripts\ExampleArmy.cs" />
     <Compile Include="Assets\Formations\Scripts\BoxFormation.cs" />
     <Compile Include="Assets\_Scripts\Unit\UnitData.cs" />
+    <Compile Include="Assets\RTS Selector\Scripts\SelectableCharacter.cs" />
+    <Compile Include="Assets\_Scripts\UI\DetailsUpdater.cs" />
     <Compile Include="Assets\_Scripts\MessageQueue\Message\IMessage.cs" />
     <Compile Include="Assets\_Scripts\Configuration\LevelItem.cs" />
     <Compile Include="Assets\Third Party\Humans\Prefabs\dd.cs" />
     <Compile Include="Assets\_Scripts\MessageQueue\Message\Unit\BasicWarriorSpawnMessage.cs" />
-    <Compile Include="Assets\_Scripts\UI\UnitSelectorUI.cs" />
+    <Compile Include="Assets\_Scripts\Configuration\ActionType.cs" />
+    <Compile Include="Assets\_Scripts\MessageQueue\Message\UI\UpdateActionMessage.cs" />
+    <Compile Include="Assets\_Scripts\MessageQueue\Message\Unit\ActionCommandMessage.cs" />
+    <Compile Include="Assets\_Scripts\Command\ICommand.cs" />
+    <Compile Include="Assets\_Scripts\Command\AttackCommand.cs" />
+    <Compile Include="Assets\_Scripts\Command\CollectCommand.cs" />
+    <Compile Include="Assets\_Scripts\Command\DefenseCommand.cs" />
+    <Compile Include="Assets\_Scripts\Command\MoveCommand.cs" />
+    <Compile Include="Assets\_Scripts\UI\ButtonComponent.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -100,6 +116,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\RTS Selector\Info.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
