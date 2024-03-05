@@ -20,6 +20,7 @@ namespace TheDragonHunt
         private void OnBasicWarriorSpawned(BasicWarriorSpawnMessage message)
         {
             GameObject warrior = SpawnObject();
+            warrior.SetLayerMaskAllChildren("Unit");
             UnitComponent unit =
                 warrior.GetComponent<UnitComponent>();
             if(unit == null)

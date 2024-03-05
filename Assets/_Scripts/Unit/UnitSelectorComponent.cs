@@ -27,6 +27,11 @@ namespace TheDragonHunt
 
         private void Update()
         {
+            if(EventSystem.current != null &&
+                    EventSystem.current.IsPointerOverGameObject())
+                    {
+                        return;
+                    }
             
 
             if (Input.GetKeyDown(KeyCode.Mouse0))
@@ -76,19 +81,36 @@ namespace TheDragonHunt
             distance = distance < _minDistanceValue ? _minDistanceValue : distance;
             Vector3 halfExtents = new Vector3(distance, distance, distance);
 
-            
+            GameObject model = null;
+            ActionType actions = ActionType.None;
+            Collider[] colliders = 
+                Physics.OverlapBox(center, halfExtents);
 
-            Collider[] colliders = Physics.OverlapBox(center, halfExtents);
             foreach (Collider collider in colliders)
             {
-                UnitComponent unit = collider.GetComponent<UnitComponent>();
+                UnitComponent unit = 
+                    collider.GetComponent<UnitComponent>();
                 if (unit != null )
                 {
                     unit.Selected(true);
                     _units.Add(unit);
 
+                    if(model == null)
+                    {
+                        model = collider.gameObject;
+                        actions = unit.Actions;
+                    }
+
                    
                 }
+                MessageQueueManager.Instance.SendMessage(
+                    new UpdateDetailsMessage
+                    {
+                        units = _units,
+                        Model = model
+                    });
+                MessageQueueManager.Instance.SendMessage(
+                    new UpdateActionsMessage { Actions = actions });
             }
 
         }
@@ -97,6 +119,19 @@ namespace TheDragonHunt
         {
             if (_units.Count == 0)
             {
+                MessageQueueManager.Instance.SendMessage(
+                    new UpdateDetailsMessage
+                    {
+                        units = _units,
+                        Model = null
+                    });
+                MessageQueueManager.Instance.SendMessage(
+                    new UpdateActionsMessage
+                    {
+                        Actions = ActionType.None
+                    
+                    });
+
                 return;
             }
 

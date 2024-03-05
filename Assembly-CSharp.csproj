@@ -57,19 +57,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\_Scripts\Resources\ResourcesType.cs" />
+    <Compile Include="Assets\_Scripts\Command\AttackCommand.cs" />
     <Compile Include="Assets\_Scripts\Extension\GameObjectExtension.cs" />
     <Compile Include="Assets\RTS Selector\Scripts\SelectManager.cs" />
     <Compile Include="Assets\_Scripts\Configuration\LevelConfiguration.cs" />
     <Compile Include="Assets\Formations\Scripts\FormationRenderer.cs" />
+    <Compile Include="Assets\_Scripts\Command\ICommand.cs" />
     <Compile Include="Assets\Formations\Scripts\FormationBase.cs" />
     <Compile Include="Assets\_Scripts\Unit\UnitSelectorComponent.cs" />
+    <Compile Include="Assets\_Scripts\Configuration\ActionType.cs" />
     <Compile Include="Assets\_Scripts\ObjectPool\ObjectPoolComponent.cs" />
     <Compile Include="Assets\_Scripts\Spawner\BasicWarriorSpawner.cs" />
+    <Compile Include="Assets\_Scripts\Command\CollectCommand.cs" />
     <Compile Include="Assets\_Scripts\Spawner\BaseSpawner.cs" />
+    <Compile Include="Assets\_Scripts\Command\MoveCommand.cs" />
     <Compile Include="Assets\_Scripts\Configuration\LevelItemType.cs" />
     <Compile Include="Assets\_Scripts\MessageQueue\Message\UI\UpdateDetailsMessage.cs" />
     <Compile Include="Assets\Formations\Scripts\RadialFormation.cs" />
     <Compile Include="Assets\RTS Selector\Example Scene\Scripts\CameraScript.cs" />
+    <Compile Include="Assets\_Scripts\Unit\UnitAnimationState.cs" />
     <Compile Include="Assets\_Scripts\MessageQueue\MessageQueueManager.cs" />
     <Compile Include="Assets\_Scripts\UI\ResourcesUpdater.cs" />
     <Compile Include="Assets\_Scripts\MessageQueue\Message\UI\UpdateResourcesMessage.cs" />
@@ -82,23 +88,24 @@
     <Compile Include="Assets\_Scripts\Unit\UnitType.cs" />
     <Compile Include="Assets\Data\Level\LevelComponent.cs" />
     <Compile Include="Assets\Formations\Scripts\ExampleArmy.cs" />
+    <Compile Include="Assets\_Scripts\UI\ButtonComponent.cs" />
     <Compile Include="Assets\Formations\Scripts\BoxFormation.cs" />
+    <Compile Include="Assets\_Scripts\MessageQueue\Message\Unit\ActionCommandMessage.cs" />
     <Compile Include="Assets\_Scripts\Unit\UnitData.cs" />
     <Compile Include="Assets\RTS Selector\Scripts\SelectableCharacter.cs" />
     <Compile Include="Assets\_Scripts\UI\DetailsUpdater.cs" />
+    <Compile Include="Assets\_Scripts\Command\DefenseCommand.cs" />
     <Compile Include="Assets\_Scripts\MessageQueue\Message\IMessage.cs" />
+    <Compile Include="Assets\_Scripts\MessageQueue\Message\UI\UpdateActionsMessage.cs" />
     <Compile Include="Assets\_Scripts\Configuration\LevelItem.cs" />
     <Compile Include="Assets\Third Party\Humans\Prefabs\dd.cs" />
     <Compile Include="Assets\_Scripts\MessageQueue\Message\Unit\BasicWarriorSpawnMessage.cs" />
-    <Compile Include="Assets\_Scripts\Configuration\ActionType.cs" />
-    <Compile Include="Assets\_Scripts\MessageQueue\Message\UI\UpdateActionMessage.cs" />
-    <Compile Include="Assets\_Scripts\MessageQueue\Message\Unit\ActionCommandMessage.cs" />
-    <Compile Include="Assets\_Scripts\Command\ICommand.cs" />
-    <Compile Include="Assets\_Scripts\Command\AttackCommand.cs" />
-    <Compile Include="Assets\_Scripts\Command\CollectCommand.cs" />
-    <Compile Include="Assets\_Scripts\Command\DefenseCommand.cs" />
-    <Compile Include="Assets\_Scripts\Command\MoveCommand.cs" />
-    <Compile Include="Assets\_Scripts\UI\ButtonComponent.cs" />
+    <Compile Include="Assets\_Scripts\UI\ButtonManager.cs" />
+    <Compile Include="Assets\_Scripts\MessageQueue\Message\Unit\BasicMageSpawnMessage.cs" />
+    <Compile Include="Assets\_Scripts\Spawner\BasicMageSpawner.cs" />
+    <Compile Include="Assets\_Scripts\Battle\ProjectileComponent.cs" />
+    <Compile Include="Assets\_Scripts\MessageQueue\Message\Battle\FireballSpawnMessage.cs" />
+    <Compile Include="Assets\_Scripts\Spawner\FireballSpawner.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

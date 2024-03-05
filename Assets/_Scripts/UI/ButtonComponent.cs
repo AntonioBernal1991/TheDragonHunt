@@ -16,13 +16,13 @@ namespace TheDragonHunt
                     _command = new AttackCommand();
                     break;
                 case ActionType.Defense:
-                    _command = new AttackCommand();
+                    _command = new DefenseCommand();
                     break;
                 case ActionType.Move:
-                    _command = new AttackCommand();
+                    _command = new MoveCommand();
                     break;
                 case ActionType.Collect:
-                    _command = new AttackCommand();
+                    _command = new CollectCommand();
                     break;
                 case ActionType.Build:
                 case ActionType.Upgrade:
@@ -30,6 +30,10 @@ namespace TheDragonHunt
                 default:
                     break;
             }
+        }
+        public void OnClick()
+        {
+            _command?.Execute();
         }
     }
 
