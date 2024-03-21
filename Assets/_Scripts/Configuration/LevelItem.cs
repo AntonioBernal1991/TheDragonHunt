@@ -9,6 +9,8 @@ namespace TheDragonHunt
     {
         public LevelItemType Type;
         public GameObject prefab;
+
+        public LevelItemCollisionType collisionType;
     }
 
 
