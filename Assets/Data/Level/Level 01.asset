@@ -19,61 +19,121 @@ MonoBehaviour:
     Coordinates: {x: 0, y: 1}
   - itemType: 1
     Coordinates: {x: 0, y: 2}
-  - itemType: 1
+  - itemType: 0
     Coordinates: {x: 0, y: 3}
-  - itemType: 1
+  - itemType: 0
     Coordinates: {x: 0, y: 4}
+  - itemType: 0
+    Coordinates: {x: 0, y: 5}
+  - itemType: 0
+    Coordinates: {x: 0, y: 6}
+  - itemType: 0
+    Coordinates: {x: 0, y: 7}
+  - itemType: 0
+    Coordinates: {x: 0, y: 8}
+  - itemType: 0
+    Coordinates: {x: 0, y: 9}
   - itemType: 1
     Coordinates: {x: 1, y: 0}
   - itemType: 1
     Coordinates: {x: 1, y: 1}
   - itemType: 1
     Coordinates: {x: 1, y: 2}
-  - itemType: 1
+  - itemType: 0
     Coordinates: {x: 1, y: 3}
-  - itemType: 1
+  - itemType: 0
     Coordinates: {x: 1, y: 4}
+  - itemType: 0
+    Coordinates: {x: 1, y: 5}
+  - itemType: 0
+    Coordinates: {x: 1, y: 6}
+  - itemType: 0
+    Coordinates: {x: 1, y: 7}
+  - itemType: 0
+    Coordinates: {x: 1, y: 8}
+  - itemType: 0
+    Coordinates: {x: 1, y: 9}
   - itemType: 1
     Coordinates: {x: 2, y: 0}
-  - itemType: 1
+  - itemType: 3
     Coordinates: {x: 2, y: 1}
-  - itemType: 1
+  - itemType: 3
     Coordinates: {x: 2, y: 2}
-  - itemType: 1
+  - itemType: 0
     Coordinates: {x: 2, y: 3}
-  - itemType: 1
+  - itemType: 0
     Coordinates: {x: 2, y: 4}
-  - itemType: 1
+  - itemType: 0
+    Coordinates: {x: 2, y: 5}
+  - itemType: 0
+    Coordinates: {x: 2, y: 6}
+  - itemType: 0
+    Coordinates: {x: 2, y: 7}
+  - itemType: 0
+    Coordinates: {x: 2, y: 8}
+  - itemType: 0
+    Coordinates: {x: 2, y: 9}
+  - itemType: 0
     Coordinates: {x: 3, y: 0}
-  - itemType: 1
+  - itemType: 0
     Coordinates: {x: 3, y: 1}
-  - itemType: 1
+  - itemType: 3
     Coordinates: {x: 3, y: 2}
-  - itemType: 1
+  - itemType: 0
     Coordinates: {x: 3, y: 3}
-  - itemType: 1
+  - itemType: 3
     Coordinates: {x: 3, y: 4}
-  - itemType: 1
+  - itemType: 0
+    Coordinates: {x: 3, y: 5}
+  - itemType: 0
+    Coordinates: {x: 3, y: 6}
+  - itemType: 0
+    Coordinates: {x: 3, y: 7}
+  - itemType: 0
+    Coordinates: {x: 3, y: 8}
+  - itemType: 0
+    Coordinates: {x: 3, y: 9}
+  - itemType: 0
     Coordinates: {x: 4, y: 0}
-  - itemType: 1
+  - itemType: 0
     Coordinates: {x: 4, y: 1}
-  - itemType: 1
+  - itemType: 0
     Coordinates: {x: 4, y: 2}
-  - itemType: 2
+  - itemType: 0
     Coordinates: {x: 4, y: 3}
-  - itemType: 2
+  - itemType: 0
     Coordinates: {x: 4, y: 4}
-  - itemType: 1
+  - itemType: 0
+    Coordinates: {x: 4, y: 5}
+  - itemType: 0
+    Coordinates: {x: 4, y: 6}
+  - itemType: 0
+    Coordinates: {x: 4, y: 7}
+  - itemType: 0
+    Coordinates: {x: 4, y: 8}
+  - itemType: 0
+    Coordinates: {x: 4, y: 9}
+  - itemType: 0
     Coordinates: {x: 5, y: 0}
-  - itemType: 1
+  - itemType: 0
     Coordinates: {x: 5, y: 1}
   - itemType: 0
     Coordinates: {x: 5, y: 2}
   - itemType: 0
     Coordinates: {x: 5, y: 3}
-  - itemType: 0
+  - itemType: 3
     Coordinates: {x: 5, y: 4}
-  - itemType: 1
+  - itemType: 3
+    Coordinates: {x: 5, y: 5}
+  - itemType: 0
+    Coordinates: {x: 5, y: 6}
+  - itemType: 0
+    Coordinates: {x: 5, y: 7}
+  - itemType: 0
+    Coordinates: {x: 5, y: 8}
+  - itemType: 0
+    Coordinates: {x: 5, y: 9}
+  - itemType: 0
     Coordinates: {x: 6, y: 0}
   - itemType: 0
     Coordinates: {x: 6, y: 1}
@@ -83,7 +143,17 @@ MonoBehaviour:
     Coordinates: {x: 6, y: 3}
   - itemType: 0
     Coordinates: {x: 6, y: 4}
-  - itemType: 1
+  - itemType: 3
+    Coordinates: {x: 6, y: 5}
+  - itemType: 0
+    Coordinates: {x: 6, y: 6}
+  - itemType: 0
+    Coordinates: {x: 6, y: 7}
+  - itemType: 0
+    Coordinates: {x: 6, y: 8}
+  - itemType: 0
+    Coordinates: {x: 6, y: 9}
+  - itemType: 0
     Coordinates: {x: 7, y: 0}
   - itemType: 0
     Coordinates: {x: 7, y: 1}
@@ -93,6 +163,16 @@ MonoBehaviour:
     Coordinates: {x: 7, y: 3}
   - itemType: 0
     Coordinates: {x: 7, y: 4}
+  - itemType: 0
+    Coordinates: {x: 7, y: 5}
+  - itemType: 0
+    Coordinates: {x: 7, y: 6}
+  - itemType: 0
+    Coordinates: {x: 7, y: 7}
+  - itemType: 0
+    Coordinates: {x: 7, y: 8}
+  - itemType: 0
+    Coordinates: {x: 7, y: 9}
   - itemType: 0
     Coordinates: {x: 8, y: 0}
   - itemType: 0
@@ -104,6 +184,16 @@ MonoBehaviour:
   - itemType: 0
     Coordinates: {x: 8, y: 4}
   - itemType: 0
+    Coordinates: {x: 8, y: 5}
+  - itemType: 0
+    Coordinates: {x: 8, y: 6}
+  - itemType: 0
+    Coordinates: {x: 8, y: 7}
+  - itemType: 2
+    Coordinates: {x: 8, y: 8}
+  - itemType: 0
+    Coordinates: {x: 8, y: 9}
+  - itemType: 0
     Coordinates: {x: 9, y: 0}
   - itemType: 0
     Coordinates: {x: 9, y: 1}
@@ -114,297 +204,15 @@ MonoBehaviour:
   - itemType: 0
     Coordinates: {x: 9, y: 4}
   - itemType: 0
-    Coordinates: {x: 10, y: 0}
-  - itemType: 0
-    Coordinates: {x: 10, y: 1}
-  - itemType: 0
-    Coordinates: {x: 10, y: 2}
-  - itemType: 0
-    Coordinates: {x: 10, y: 3}
-  - itemType: 0
-    Coordinates: {x: 10, y: 4}
-  - itemType: 0
-    Coordinates: {x: 11, y: 0}
-  - itemType: 0
-    Coordinates: {x: 11, y: 1}
-  - itemType: 0
-    Coordinates: {x: 11, y: 2}
-  - itemType: 0
-    Coordinates: {x: 11, y: 3}
-  - itemType: 0
-    Coordinates: {x: 11, y: 4}
-  - itemType: 0
-    Coordinates: {x: 12, y: 0}
-  - itemType: 0
-    Coordinates: {x: 12, y: 1}
-  - itemType: 0
-    Coordinates: {x: 12, y: 2}
-  - itemType: 0
-    Coordinates: {x: 12, y: 3}
-  - itemType: 0
-    Coordinates: {x: 12, y: 4}
-  - itemType: 0
-    Coordinates: {x: 13, y: 0}
-  - itemType: 0
-    Coordinates: {x: 13, y: 1}
-  - itemType: 0
-    Coordinates: {x: 13, y: 2}
-  - itemType: 0
-    Coordinates: {x: 13, y: 3}
-  - itemType: 0
-    Coordinates: {x: 13, y: 4}
-  - itemType: 1
-    Coordinates: {x: 0, y: 5}
-  - itemType: 1
-    Coordinates: {x: 1, y: 5}
-  - itemType: 1
-    Coordinates: {x: 2, y: 5}
-  - itemType: 1
-    Coordinates: {x: 3, y: 5}
-  - itemType: 0
-    Coordinates: {x: 4, y: 5}
-  - itemType: 0
-    Coordinates: {x: 5, y: 5}
-  - itemType: 0
-    Coordinates: {x: 6, y: 5}
-  - itemType: 0
-    Coordinates: {x: 7, y: 5}
-  - itemType: 0
-    Coordinates: {x: 8, y: 5}
-  - itemType: 0
     Coordinates: {x: 9, y: 5}
-  - itemType: 0
-    Coordinates: {x: 10, y: 5}
-  - itemType: 0
-    Coordinates: {x: 11, y: 5}
-  - itemType: 0
-    Coordinates: {x: 12, y: 5}
-  - itemType: 0
-    Coordinates: {x: 13, y: 5}
-  - itemType: 1
-    Coordinates: {x: 0, y: 6}
-  - itemType: 1
-    Coordinates: {x: 1, y: 6}
-  - itemType: 1
-    Coordinates: {x: 2, y: 6}
-  - itemType: 1
-    Coordinates: {x: 3, y: 6}
-  - itemType: 0
-    Coordinates: {x: 4, y: 6}
-  - itemType: 0
-    Coordinates: {x: 5, y: 6}
-  - itemType: 0
-    Coordinates: {x: 6, y: 6}
-  - itemType: 0
-    Coordinates: {x: 7, y: 6}
-  - itemType: 0
-    Coordinates: {x: 8, y: 6}
   - itemType: 0
     Coordinates: {x: 9, y: 6}
   - itemType: 0
-    Coordinates: {x: 10, y: 6}
-  - itemType: 0
-    Coordinates: {x: 11, y: 6}
-  - itemType: 0
-    Coordinates: {x: 12, y: 6}
-  - itemType: 0
-    Coordinates: {x: 13, y: 6}
-  - itemType: 1
-    Coordinates: {x: 0, y: 7}
-  - itemType: 1
-    Coordinates: {x: 1, y: 7}
-  - itemType: 1
-    Coordinates: {x: 2, y: 7}
-  - itemType: 0
-    Coordinates: {x: 3, y: 7}
-  - itemType: 0
-    Coordinates: {x: 4, y: 7}
-  - itemType: 0
-    Coordinates: {x: 5, y: 7}
-  - itemType: 0
-    Coordinates: {x: 6, y: 7}
-  - itemType: 0
-    Coordinates: {x: 7, y: 7}
-  - itemType: 0
-    Coordinates: {x: 8, y: 7}
-  - itemType: 0
     Coordinates: {x: 9, y: 7}
-  - itemType: 0
-    Coordinates: {x: 10, y: 7}
-  - itemType: 0
-    Coordinates: {x: 11, y: 7}
-  - itemType: 0
-    Coordinates: {x: 12, y: 7}
-  - itemType: 0
-    Coordinates: {x: 13, y: 7}
-  - itemType: 1
-    Coordinates: {x: 0, y: 8}
-  - itemType: 1
-    Coordinates: {x: 1, y: 8}
-  - itemType: 0
-    Coordinates: {x: 2, y: 8}
-  - itemType: 0
-    Coordinates: {x: 3, y: 8}
-  - itemType: 0
-    Coordinates: {x: 4, y: 8}
-  - itemType: 0
-    Coordinates: {x: 5, y: 8}
-  - itemType: 0
-    Coordinates: {x: 6, y: 8}
-  - itemType: 0
-    Coordinates: {x: 7, y: 8}
-  - itemType: 0
-    Coordinates: {x: 8, y: 8}
   - itemType: 0
     Coordinates: {x: 9, y: 8}
   - itemType: 0
-    Coordinates: {x: 10, y: 8}
-  - itemType: 0
-    Coordinates: {x: 11, y: 8}
-  - itemType: 0
-    Coordinates: {x: 12, y: 8}
-  - itemType: 0
-    Coordinates: {x: 13, y: 8}
-  - itemType: 1
-    Coordinates: {x: 0, y: 9}
-  - itemType: 0
-    Coordinates: {x: 1, y: 9}
-  - itemType: 0
-    Coordinates: {x: 2, y: 9}
-  - itemType: 0
-    Coordinates: {x: 3, y: 9}
-  - itemType: 0
-    Coordinates: {x: 4, y: 9}
-  - itemType: 0
-    Coordinates: {x: 5, y: 9}
-  - itemType: 0
-    Coordinates: {x: 6, y: 9}
-  - itemType: 0
-    Coordinates: {x: 7, y: 9}
-  - itemType: 0
-    Coordinates: {x: 8, y: 9}
-  - itemType: 0
     Coordinates: {x: 9, y: 9}
-  - itemType: 0
-    Coordinates: {x: 10, y: 9}
-  - itemType: 0
-    Coordinates: {x: 11, y: 9}
-  - itemType: 0
-    Coordinates: {x: 12, y: 9}
-  - itemType: 0
-    Coordinates: {x: 13, y: 9}
-  - itemType: 0
-    Coordinates: {x: 0, y: 10}
-  - itemType: 0
-    Coordinates: {x: 1, y: 10}
-  - itemType: 0
-    Coordinates: {x: 2, y: 10}
-  - itemType: 0
-    Coordinates: {x: 3, y: 10}
-  - itemType: 0
-    Coordinates: {x: 4, y: 10}
-  - itemType: 0
-    Coordinates: {x: 5, y: 10}
-  - itemType: 0
-    Coordinates: {x: 6, y: 10}
-  - itemType: 0
-    Coordinates: {x: 7, y: 10}
-  - itemType: 0
-    Coordinates: {x: 8, y: 10}
-  - itemType: 0
-    Coordinates: {x: 9, y: 10}
-  - itemType: 0
-    Coordinates: {x: 10, y: 10}
-  - itemType: 0
-    Coordinates: {x: 11, y: 10}
-  - itemType: 0
-    Coordinates: {x: 12, y: 10}
-  - itemType: 0
-    Coordinates: {x: 13, y: 10}
-  - itemType: 0
-    Coordinates: {x: 0, y: 11}
-  - itemType: 0
-    Coordinates: {x: 1, y: 11}
-  - itemType: 0
-    Coordinates: {x: 2, y: 11}
-  - itemType: 0
-    Coordinates: {x: 3, y: 11}
-  - itemType: 0
-    Coordinates: {x: 4, y: 11}
-  - itemType: 0
-    Coordinates: {x: 5, y: 11}
-  - itemType: 0
-    Coordinates: {x: 6, y: 11}
-  - itemType: 0
-    Coordinates: {x: 7, y: 11}
-  - itemType: 0
-    Coordinates: {x: 8, y: 11}
-  - itemType: 0
-    Coordinates: {x: 9, y: 11}
-  - itemType: 0
-    Coordinates: {x: 10, y: 11}
-  - itemType: 0
-    Coordinates: {x: 11, y: 11}
-  - itemType: 0
-    Coordinates: {x: 12, y: 11}
-  - itemType: 0
-    Coordinates: {x: 13, y: 11}
-  - itemType: 0
-    Coordinates: {x: 0, y: 12}
-  - itemType: 0
-    Coordinates: {x: 1, y: 12}
-  - itemType: 0
-    Coordinates: {x: 2, y: 12}
-  - itemType: 0
-    Coordinates: {x: 3, y: 12}
-  - itemType: 0
-    Coordinates: {x: 4, y: 12}
-  - itemType: 0
-    Coordinates: {x: 5, y: 12}
-  - itemType: 0
-    Coordinates: {x: 6, y: 12}
-  - itemType: 0
-    Coordinates: {x: 7, y: 12}
-  - itemType: 0
-    Coordinates: {x: 8, y: 12}
-  - itemType: 0
-    Coordinates: {x: 9, y: 12}
-  - itemType: 0
-    Coordinates: {x: 10, y: 12}
-  - itemType: 0
-    Coordinates: {x: 11, y: 12}
-  - itemType: 0
-    Coordinates: {x: 12, y: 12}
-  - itemType: 0
-    Coordinates: {x: 13, y: 12}
-  - itemType: 0
-    Coordinates: {x: 0, y: 13}
-  - itemType: 0
-    Coordinates: {x: 1, y: 13}
-  - itemType: 0
-    Coordinates: {x: 2, y: 13}
-  - itemType: 0
-    Coordinates: {x: 3, y: 13}
-  - itemType: 0
-    Coordinates: {x: 4, y: 13}
-  - itemType: 0
-    Coordinates: {x: 5, y: 13}
-  - itemType: 0
-    Coordinates: {x: 6, y: 13}
-  - itemType: 0
-    Coordinates: {x: 7, y: 13}
-  - itemType: 0
-    Coordinates: {x: 8, y: 13}
-  - itemType: 0
-    Coordinates: {x: 9, y: 13}
-  - itemType: 0
-    Coordinates: {x: 10, y: 13}
-  - itemType: 0
-    Coordinates: {x: 11, y: 13}
-  - itemType: 0
-    Coordinates: {x: 12, y: 13}
-  - itemType: 0
-    Coordinates: {x: 13, y: 13}
-  Columns: 14
-  Rows: 14
+  Columns: 10
+  Rows: 10
   Configuration: {fileID: 11400000, guid: b320b26071f131a4aafa30e75866ff78, type: 2}

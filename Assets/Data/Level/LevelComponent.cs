@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.AI;
 namespace TheDragonHunt
 {
 
@@ -42,8 +43,21 @@ namespace TheDragonHunt
                     offsetZ / 2;
 
                 Vector3 position = new Vector3(x, 0, z);
-                Instantiate(levelItem.prefab, position, Quaternion.identity,
-                    transform);
+                GameObject item = Instantiate(levelItem.prefab, position, Quaternion.identity, transform);
+
+                switch (levelItem.collisionType)
+                {
+                    case LevelItemCollisionType.Rigidbody:
+                        item.AddComponent<BoxCollider>();
+                        break;
+                    case LevelItemCollisionType.NavMesh:
+                        item.AddComponent<NavMeshObstacle>();
+                        break;
+                    case LevelItemCollisionType.None:
+                    default:
+                        break;
+                }
+
             }
         }
 
