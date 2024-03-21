@@ -21,11 +21,12 @@ namespace TheDragonHunt
         {
             GameObject warrior = SpawnObject();
             warrior.SetLayerMaskAllChildren("Unit");
-            UnitComponent unit =
-                warrior.GetComponent<UnitComponent>();
-            if(unit == null)
+            UnitComponentNavMesh unit =
+                warrior.GetComponent<UnitComponentNavMesh>();
+
+            if (unit == null)
             {
-                unit = warrior.AddComponent<UnitComponent>();
+                unit = warrior.AddComponent<UnitComponentNavMesh>();
             }
             unit.CopyData(_unitData);
   

@@ -22,12 +22,12 @@ namespace TheDragonHunt
             GameObject mage = SpawnObject();
             mage.SetLayerMaskAllChildren("Unit");
          
-            UnitComponent unit =
-                mage.GetComponent<UnitComponent>();
+            UnitComponentNavMesh unit =
+                mage.GetComponent<UnitComponentNavMesh>();
 
             if(unit == null)
             {
-               unit = mage.AddComponent<UnitComponent>();
+               unit = mage.AddComponent<UnitComponentNavMesh>();
             }
             unit.CopyData(_unitData);
         }

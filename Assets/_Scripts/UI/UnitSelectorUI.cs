@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace TheDragonHunt
+namespace Dragoncraft
 {
     // Ensures that the game object will have both required components
     [RequireComponent(typeof(Image), typeof(RectTransform))]

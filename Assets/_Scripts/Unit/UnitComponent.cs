@@ -201,11 +201,25 @@ namespace TheDragonHunt
                 return;
             }
             Vector3 direction =
-                (_movePosition - transform.position).normalized;
+               (_movePosition - transform.position).normalized;
+            transform.position +=
+                direction * Time.deltaTime * WalkSpeed;
+            UpdatePosition();
+        }
+
+        protected virtual void UpdatePosition()
+        {
+            Vector3 direction =
+               (_movePosition - transform.position).normalized;
             transform.position +=
                 direction * Time.deltaTime * WalkSpeed;
         }
-        private void OnCollisionEnter(Collision collision)
+
+        protected Vector3 GetFinalposition()
+        {
+            return _movePosition;
+        }
+        protected virtual void OnCollisionEnter(Collision collision)
         {
             if(!collision.gameObject.CompareTag("Plane"))
             {

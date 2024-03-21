@@ -88,6 +88,7 @@ namespace TheDragonHunt
 
             foreach (Collider collider in colliders)
             {
+
                 UnitComponent unit = 
                     collider.GetComponent<UnitComponent>();
                 if (unit != null )
@@ -111,6 +112,12 @@ namespace TheDragonHunt
                     });
                 MessageQueueManager.Instance.SendMessage(
                     new UpdateActionsMessage { Actions = actions });
+
+                EnemyComponent enemy = collider.GetComponent<EnemyComponent>();
+                if(enemy != null)
+                {
+                    enemy.Selected();
+                }
             }
 
         }
