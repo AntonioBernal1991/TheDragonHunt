@@ -3,43 +3,25 @@ using System;
 namespace TheDragonHunt
 
 {
-    [RequireComponent(typeof(BoxCollider), typeof(Animator))]
-    public class UnitComponent : MonoBehaviour
+ 
+    public class UnitComponent : BaseCharacter
     {
        
-        public string ID;
+    
         public UnitType Type;
         public int Level;
         public float LevelMultiplier;
-        public float Health;
-        public float Attack;
-        public float Defense;
-        public float WalkSpeed;
-        public float AttackSpeed;
-        public Color SelectedColor;
-        private Animator _animator;
-        private Renderer _renderer;
-
-        public Color OriginalColor;
-        public float AttackRange;
         public ActionType Actions;
 
         private bool _shouldAttack;
         private float _attackCooldown;
-        private ActionType _action;
         private UnitData _unitData;
         private float _minDistance = 0.5f;
-
 
         private Vector3 _movePosition;
         private bool _shouldMove;
 
-        private void Awake()
-        {
-            _renderer = GetComponentInChildren<Renderer>();
-            _animator = GetComponent<Animator>();
-            _animator.Play("Idle");
-        }
+   
         private void OnEnable()
         {
             MessageQueueManager.Instance.AddListener<ActionCommandMessage>(
@@ -83,19 +65,16 @@ namespace TheDragonHunt
 
         public void CopyData(UnitData unitData)
         {
-            ID = Guid.NewGuid().ToString();
+            CopyBaseData(unitData);
             Type = unitData.Type;
+            Level = unitData.Level;
             LevelMultiplier = unitData.LevelMultiplier;
-            Health = unitData.Health;
-            Attack = unitData.Attack;
-            Defense = unitData.Defense;
-            WalkSpeed = unitData.walkSpeed;
-            AttackSpeed = unitData.AttackSpeed;
-            SelectedColor = unitData.selectedColor;
-            OriginalColor = unitData.OriginalColor;
-            AttackRange = unitData.AttackRange;
             Actions = unitData.Actions;
+
+
             _unitData = unitData;
+            _action = ActionType.Move;
+
             EnableMovement(false);
         }
 
@@ -117,7 +96,7 @@ namespace TheDragonHunt
               
                 else
                 {
-                    material.SetColor("_EmissionColor", OriginalColor);
+                    material.SetColor("_EmissionColor",_emissionColor);
                 }
 
                 
@@ -168,7 +147,8 @@ namespace TheDragonHunt
                     new FireballSpawnMessage
                     {
                         position = transform.position,
-                        rotation = transform.rotation
+                        rotation = transform.rotation,
+                        Damage = Attack
                     });
                 _attackCooldown = AttackSpeed;
             }
@@ -219,15 +199,43 @@ namespace TheDragonHunt
         {
             return _movePosition;
         }
-        protected virtual void OnCollisionEnter(Collision collision)
+
+        protected virtual void StopMovingAndAttack()
         {
-            if(!collision.gameObject.CompareTag("Plane"))
-            {
-                _animator.Play(
-                    _unitData.GetAnimationState(UnitAnimationState.Idle));
-                _shouldMove = false;
-            }
+            _shouldMove = false;
+            _shouldAttack = true;
         }
+        protected override void UpdateState(ActionType action)
+        {
+            base.UpdateState(action);
+
+            switch (action)
+            {
+                case ActionType.Attack:
+                    EnableMovement(false);
+                    UnitAnimationState attackState =
+                        (UnityEngine.Random.value < 0.5f) ?
+                        UnitAnimationState.Attack01 :
+                        UnitAnimationState.Attack02;
+                    PlayAnimation(attackState);
+                    break;
+                case ActionType.Move:
+                    EnableMovement(true);
+                    break;
+                case ActionType.None:
+                    _movePosition = transform.position;
+                    break;
+                default:
+                    break;
+            }
+
+        }
+        protected override void PlayAnimation(UnitAnimationState state)
+        {
+            _animator.Play(_unitData.GetAnimationState(state));
+        }
+
+
     }
 
 

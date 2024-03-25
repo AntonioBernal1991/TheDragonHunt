@@ -21,7 +21,7 @@ namespace TheDragonHunt
 
             ProjectileComponent projectile =
                 fireball.GetComponent<ProjectileComponent>();
-            projectile.SetUp(message.position, message.rotation);
+            projectile.SetUp(message.position, message.rotation,message.Damage);
         }
     }
 }

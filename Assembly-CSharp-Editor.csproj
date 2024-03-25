@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\_Scripts\Editor\Debug\ResourceDebugger.cs" />
     <Compile Include="Assets\_Scripts\Editor\LevelDataEditor.cs" />
+    <Compile Include="Assets\_Scripts\Editor\Debug\EnemyDebbuger.cs" />
     <Compile Include="Assets\_Scripts\Editor\Debug\UnitDebugger.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -825,6 +826,22 @@
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{A7772C59-3E1F-08E5-32ED-48DC18CC5A66}</Project>
       <Name>Assembly-CSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsExamples.csproj">
+      <Project>{F46BC08A-3CC2-2BC7-70B9-DAD50D810746}</Project>
+      <Name>NavMeshComponentsExamples</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponents.csproj">
+      <Project>{22ED7CAA-C783-8143-4D92-00B14CE5AF61}</Project>
+      <Name>NavMeshComponents</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsEditor.csproj">
+      <Project>{C451607F-1A5A-4FD6-7FDF-E040520DB55D}</Project>
+      <Name>NavMeshComponentsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsExamplesEditor.csproj">
+      <Project>{5EAFE275-EBEC-0C3F-D9F7-A81F13ABF4F0}</Project>
+      <Name>NavMeshComponentsExamplesEditor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

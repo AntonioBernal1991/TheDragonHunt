@@ -60,6 +60,7 @@
     <Compile Include="Assets\_Scripts\Command\AttackCommand.cs" />
     <Compile Include="Assets\_Scripts\Extension\GameObjectExtension.cs" />
     <Compile Include="Assets\RTS Selector\Scripts\SelectManager.cs" />
+    <Compile Include="Assets\_Scripts\Enemy\EnemyComponent.cs" />
     <Compile Include="Assets\_Scripts\Configuration\LevelConfiguration.cs" />
     <Compile Include="Assets\Formations\Scripts\FormationRenderer.cs" />
     <Compile Include="Assets\_Scripts\Command\ICommand.cs" />
@@ -68,16 +69,26 @@
     <Compile Include="Assets\_Scripts\Configuration\ActionType.cs" />
     <Compile Include="Assets\_Scripts\ObjectPool\ObjectPoolComponent.cs" />
     <Compile Include="Assets\_Scripts\Spawner\BasicWarriorSpawner.cs" />
+    <Compile Include="Assets\_Scripts\MessageQueue\Message\Enemy\BasicOrcSpawnMessage.cs" />
     <Compile Include="Assets\_Scripts\Command\CollectCommand.cs" />
+    <Compile Include="Assets\_Scripts\Enemy\EnemyData.cs" />
     <Compile Include="Assets\_Scripts\Spawner\BaseSpawner.cs" />
+    <Compile Include="Assets\_Scripts\UI\DamageFeedbackUI.cs" />
+    <Compile Include="Assets\_Scripts\Spawner\BasicMageSpawner.cs" />
+    <Compile Include="Assets\_Scripts\Unit\UnitComponentNavMesh.cs" />
     <Compile Include="Assets\_Scripts\Command\MoveCommand.cs" />
     <Compile Include="Assets\_Scripts\Configuration\LevelItemType.cs" />
+    <Compile Include="Assets\_Scripts\MessageQueue\Message\Battle\FireballSpawnMessage.cs" />
     <Compile Include="Assets\_Scripts\MessageQueue\Message\UI\UpdateDetailsMessage.cs" />
     <Compile Include="Assets\Formations\Scripts\RadialFormation.cs" />
     <Compile Include="Assets\RTS Selector\Example Scene\Scripts\CameraScript.cs" />
     <Compile Include="Assets\_Scripts\Unit\UnitAnimationState.cs" />
+    <Compile Include="Assets\_Scripts\UI\TimeFadeComponent.cs" />
     <Compile Include="Assets\_Scripts\MessageQueue\MessageQueueManager.cs" />
+    <Compile Include="Assets\_Scripts\Battle\ProjectileComponent.cs" />
     <Compile Include="Assets\_Scripts\UI\ResourcesUpdater.cs" />
+    <Compile Include="Assets\_Scripts\Configuration\LevelItemCollisionType.cs" />
+    <Compile Include="Assets\_Scripts\MessageQueue\Message\Enemy\BaseEnemySpawnMessage.cs" />
     <Compile Include="Assets\_Scripts\MessageQueue\Message\UI\UpdateResourcesMessage.cs" />
     <Compile Include="Assets\_Scripts\UI\UnitSelectorUI.cs" />
     <Compile Include="Assets\_Scripts\Configuration\Level\LevelData.cs" />
@@ -88,29 +99,36 @@
     <Compile Include="Assets\_Scripts\Unit\UnitType.cs" />
     <Compile Include="Assets\Data\Level\LevelComponent.cs" />
     <Compile Include="Assets\Formations\Scripts\ExampleArmy.cs" />
+    <Compile Include="Assets\_Scripts\Spawner\FireballSpawner.cs" />
     <Compile Include="Assets\_Scripts\UI\ButtonComponent.cs" />
     <Compile Include="Assets\Formations\Scripts\BoxFormation.cs" />
     <Compile Include="Assets\_Scripts\MessageQueue\Message\Unit\ActionCommandMessage.cs" />
     <Compile Include="Assets\_Scripts\Unit\UnitData.cs" />
     <Compile Include="Assets\RTS Selector\Scripts\SelectableCharacter.cs" />
+    <Compile Include="Assets\_Scripts\Spawner\EnemySpawner.cs" />
     <Compile Include="Assets\_Scripts\UI\DetailsUpdater.cs" />
+    <Compile Include="Assets\_Scripts\Character\BaseCharacterData.cs" />
+    <Compile Include="Assets\_Scripts\MessageQueue\Message\UI\DamageFeedbackMessage.cs" />
     <Compile Include="Assets\_Scripts\Command\DefenseCommand.cs" />
     <Compile Include="Assets\_Scripts\MessageQueue\Message\IMessage.cs" />
     <Compile Include="Assets\_Scripts\MessageQueue\Message\UI\UpdateActionsMessage.cs" />
+    <Compile Include="Assets\_Scripts\Enemy\EnemyType.cs" />
+    <Compile Include="Assets\_Scripts\MessageQueue\Message\Enemy\BasicGolemSpawnMessage.cs" />
     <Compile Include="Assets\_Scripts\Configuration\LevelItem.cs" />
+    <Compile Include="Assets\_Scripts\MessageQueue\Message\Unit\BasicMageSpawnMessage.cs" />
     <Compile Include="Assets\Third Party\Humans\Prefabs\dd.cs" />
+    <Compile Include="Assets\_Scripts\Character\BaseCharacter.cs" />
     <Compile Include="Assets\_Scripts\MessageQueue\Message\Unit\BasicWarriorSpawnMessage.cs" />
     <Compile Include="Assets\_Scripts\UI\ButtonManager.cs" />
-    <Compile Include="Assets\_Scripts\MessageQueue\Message\Unit\BasicMageSpawnMessage.cs" />
-    <Compile Include="Assets\_Scripts\Spawner\BasicMageSpawner.cs" />
-    <Compile Include="Assets\_Scripts\Battle\ProjectileComponent.cs" />
-    <Compile Include="Assets\_Scripts\MessageQueue\Message\Battle\FireballSpawnMessage.cs" />
-    <Compile Include="Assets\_Scripts\Spawner\FireballSpawner.cs" />
+    <Compile Include="Assets\_Scripts\MessageQueue\Message\Enemy\RedDragonSpawnMessage.cs" />
+    <Compile Include="Assets\_Scripts\Battle\CollisionComponent.cs" />
+    <Compile Include="Assets\_Scripts\Enemy\EnemyComponentNavMesh.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\NavMeshComponents-master\ProjectSettings\ProjectVersion.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
@@ -839,6 +857,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="NavMeshComponentsExamples.csproj">
+      <Project>{F46BC08A-3CC2-2BC7-70B9-DAD50D810746}</Project>
+      <Name>NavMeshComponentsExamples</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponents.csproj">
+      <Project>{22ED7CAA-C783-8143-4D92-00B14CE5AF61}</Project>
+      <Name>NavMeshComponents</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsEditor.csproj">
+      <Project>{C451607F-1A5A-4FD6-7FDF-E040520DB55D}</Project>
+      <Name>NavMeshComponentsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsExamplesEditor.csproj">
+      <Project>{5EAFE275-EBEC-0C3F-D9F7-A81F13ABF4F0}</Project>
+      <Name>NavMeshComponentsExamplesEditor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
